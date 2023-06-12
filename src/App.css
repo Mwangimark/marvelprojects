@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
+body {
+    background-color: black;
+    display: grid;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    display: grid;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top1 {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border: 1px solid grey;
+    width: 80%;
+    margin: auto;
+
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.mark {
+    border: 1px solid grey;
+    font-size: larger;
 }
 
-.App-link {
-  color: #61dafb;
+.marvel {
+    font-weight: bolder;
+    background-color: red;
+    width: 80px;
+    height: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.marvel img {
+    width: 100%;
+    height: 100%;
+}
+
+.top2 ul {
+    display: flex;
+    width: 65%;
+    margin: auto;
+    color: white;
+}
+
+.top2 ul li {
+    margin: 20px;
+    list-style-type: none;
+    font-weight: bolder;
+}
+
+.top3 {
+    background-color: aliceblue;
+}
+
+.top3 ul {
+    display: flex;
+    margin-left: 120px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.top3 ul li {
+    list-style-type: none;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+.search {
+    display: flex;
+}
+
+/* ===========header pic============ */
+.headerpic {
+    border: 3px solid lightslategrey;
+    height: 300px;
+    width: 800px;
+    margin: 10px auto;
+}
+
+.headerpics img {
+    height: 100%;
+    width: 100%;
+}
+
+/* ===============content================ */
+.container {
+    background-color: rgb(9, 2, 32);
+    width: 95%;
+    margin-top: 180px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.content {
+
+    margin: 10px;
+    border: 2px solid black;
+    height: 300px;
+    transition: transform 0.2s,cursor 0.2s;
+}
+.content:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.content-image {
+    height: 80%;
+    border: 1px dotted grey;
+}
+.content-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.content-title {
+    height: 10%;
+    font-size: larger;
+   background-color: aliceblue;
+}
+
+.content-name {
+    height: 10%;
+    font-size: medium;
+    background-color: aliceblue;
+}
+
+/* ===============footer==================== */
+.footer {
+    color: aliceblue;
+    display: grid;
+    width: auto;
+}
+
+.footerup {
+    display: flex;
+}
+
+.words {
+    margin: 20px 50px;
+    width: 40%;
+}
+
+.words input {
+    width: 90%;
+    height: 30px;
+}
+
+.footerimage {
+    height: 250px;
+    width: 700px;
+}
+
+.footerimage img {
+    width: 100%;
+    height: 100%;
+}
+
+.footerdown {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px;
+}
+
+li {
+    list-style-type: none;
 }
